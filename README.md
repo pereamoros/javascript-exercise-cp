@@ -7,7 +7,7 @@
 1. **Clone the repo**
 
 ```bash
-git clone https://github.com/ClearPeaks/javascript-exercise-pere-amoros.git
+git clone https://github.com/pereamoros/javascript-exercise-cp.git
 cd javascript-exercise-pere-amoros
 ```
 
