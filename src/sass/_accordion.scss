@@ -1,0 +1,57 @@
+@use "mixins" as *;
+
+.accordion {
+  width: 40rem;
+  background-color: var(--accordion-color-bg);
+  padding: 2rem;
+  border-radius: var(--border-radius-l);
+  box-shadow: var(--box-shadow);
+  margin: 0 auto;
+
+  @include respond(tablet) {
+    width: 100%;
+  }
+
+  & dt {
+    font-family: "TheFuture-Bold", system-ui, sans-serif;
+    font-size: var(--title-font-size);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+
+    &:not(:first-child) {
+      margin-top: 1rem;
+    }
+
+    & svg {
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      transition: rotate 0.3s ease-in-out, background-color 0.3s ease;
+    }
+
+    &:hover svg {
+      background-color: var(--accordion-color-bg-dark);
+    }
+  }
+
+  & dt[aria-expanded="true"] {
+    & + dd {
+      display: block;
+      padding: 1rem;
+      animation: 0.5s fadeIn ease-in-out;
+    }
+
+    & svg {
+      rotate: 90deg;
+      background-color: var(--accordion-color-bg-dark);
+    }
+  }
+
+  & dd {
+    display: none;
+  }
+}

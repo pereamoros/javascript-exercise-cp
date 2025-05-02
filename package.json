@@ -1,0 +1,24 @@
+{
+  "name": "javascript-exercise-pere-amoros",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass src/sass/main.scss src/assets/css/style.css -w --no-source-map",
+    "sass-build": "sass src/sass/main.scss src/assets/css/style.css --style=compressed --no-source-map",
+    "create-dist": "shx mkdir -p dist/assets/css dist/assets/fonts dist/assets/js",
+    "copy-css": "shx cp -r src/assets/css/* dist/assets/css/",
+    "copy-js": "shx cp -r src/assets/js/* dist/assets/js/",
+    "copy-fonts": "shx cp -r src/assets/fonts/* dist/assets/fonts/",
+    "copy-index": "shx cp src/index.html dist/index.html",
+    "build": "npm run create-dist && npm run sass-build && npm run copy-css && npm run copy-js && npm run copy-fonts && npm run copy-index",
+    "preview": "npx serve dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.87.0",
+    "shx": "^0.4.0"
+  }
+}

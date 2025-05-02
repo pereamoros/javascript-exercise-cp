@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Exercise - Pere Amorós</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Javascript Exercise - Pere Amorós</h1>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="container">
+          <div class="subheader">
+            <h2>📦 Initial solution</h2>
+            <span
+              >With the HTML provided, and with as few modifications as
+              possible, I created a functional accordion displaying one element
+              of content at a time.</span
+            >
+          </div>
+
+          <dl id="accordion" class="accordion">
+            <dt>Section 1</dt>
+            <dd>
+              <p>Section 1 Content...</p>
+            </dd>
+
+            <dt>Section 2</dt>
+            <dd>
+              <p>Section 2 Content...</p>
+            </dd>
+
+            <dt>Section 3</dt>
+            <dd>
+              <p>Section 3 Content...</p>
+            </dd>
+          </dl>
+        </div>
+      </section>
+
+      <section id="bonus">
+        <div class="container">
+          <div class="subheader">
+            <h2>⭐️ Bonus version</h2>
+            <span
+              >In this approach, I built the accordion entirely in JavaScript
+              and fetched the content via AJAX from a local .json file.</span
+            >
+          </div>
+          <div id="accordion-bonus"></div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

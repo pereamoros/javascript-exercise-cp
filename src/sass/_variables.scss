@@ -1,0 +1,22 @@
+// VARIABLES
+$color-green: #00d084;
+$color-light-green: #7bdcb5;
+$color-cool-blue: #57b1c7;
+$color-white: #fff;
+$color-gray: #f0f0f0;
+$color-dark-gray: #3c4043;
+
+:root {
+  --color-text: #{$color-dark-gray};
+  --body-color-bg-1: #{$color-green};
+  --body-color-bg-2: #{$color-cool-blue};
+  --body-color-bg-3: #{$color-light-green};
+  --accordion-color-bg: #{$color-white};
+  --accordion-color-bg-dark: #{$color-gray};
+  --default-font-size: 16px;
+  --title-font-size: 20px;
+  --h1-font-size: 42px;
+  --border-radius-l: 28px;
+  --border-radius-s: 8px;
+  --box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}

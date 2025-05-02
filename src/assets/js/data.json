@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Step 1: Get the DOM element",
+    "content": "In my HTML I create an empty div with an 'id' to access it via JavaScript."
+  },
+  {
+    "id": 2,
+    "title": "Step 2: Creating the Accordion Container",
+    "content": "I want to emulate the same HTML structure as in the first approach. To do so I create a class AccordionContainer responsible for creating the <dt> with the 'accordion' class."
+  },
+  {
+    "id": 3,
+    "title": "Step 3: Creating the Accordion Section",
+    "content": "I create a class AccordionSection that generates both <dt> and <dd> with the required attributes. The most important one is the 'aria-expanded' in <dt>, which controls the visibility of the adjacent <dd>."
+  },
+  {
+    "id": 4,
+    "title": "Step 4: Displaying only one section at a time",
+    "content": "I added a click event to the title that toggles the 'aria-expanded' attribute. To close the previously opened section, I use a static variable to track the last opened element and close it on the next title click."
+  },
+  {
+    "id": 5,
+    "title": "Step 5: Fetching the data",
+    "content": "I created a .json file to simulate an API response and fetch the data asynchronously. "
+  },
+  {
+    "id": 6,
+    "title": "Thank you for your time",
+    "content": "This concludes my JavaScript exercise. Thank you! "
+  }
+]
